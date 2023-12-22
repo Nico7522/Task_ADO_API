@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Task]
+(
+	[Task_Id] INT NOT NULL IDENTITY, 
+	Title NVARCHAR(100) NOT NULL,
+	[Description] NVARCHAR(500) NOT NULL,
+	IsComplete BIT DEFAULT 0,
+    CONSTRAINT [PK_Task] PRIMARY KEY ([Task_Id]) 
+)
